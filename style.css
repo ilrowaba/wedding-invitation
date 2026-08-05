@@ -244,11 +244,11 @@ img { display: block; width: 100%; }
 .gallery__item img { height: 100%; object-fit: cover; }
 
 .accounts { padding: 100px 20px 56px; }
-.accounts h2 { margin: 0; color: #323441; font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif; font-size: 16px; line-height: 24px; font-weight: 400; text-align: center; }
+.accounts h2 { margin: 0; color: #323441; font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif; font-size: 18px; line-height: 26px; font-weight: 400; text-align: center; }
 .accounts h2, summary { font-family: 'MaruBuri', 'Maru Buri', serif; }
 .account-groups { margin-top: 44px; }
 details { margin: 0; padding-bottom: 12px; background: #fff; text-align: left; }
-summary { display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0; color: #323441; font-size: 16px; font-weight: 600; cursor: pointer; list-style: none; }
+summary { display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0; color: #323441; font-size: 18px; font-weight: 600; cursor: pointer; list-style: none; }
 summary::-webkit-details-marker { display: none; }
 .summary-chevron { width: 9px; height: 9px; margin-right: 3px; border-right: 1.5px solid #667286; border-bottom: 1.5px solid #667286; transform: rotate(45deg); transition: transform .2s ease; }
 details[open] .summary-chevron { transform: rotate(225deg); }
