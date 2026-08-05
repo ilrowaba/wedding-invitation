@@ -141,7 +141,7 @@ img { display: block; width: 100%; }
 .greeting__copy, .families { font-family: 'MaruBuri', 'Maru Buri', serif; }
 .families p { display: flex; align-items: baseline; justify-content: center; gap: 4px; margin: 0; }
 .families strong { font-size: 18px; font-weight: 600; letter-spacing: .1em; }
-.families span { color: #9aa2ae; font-size: 14px; font-weight: 600; }
+.families span { color: #9aa2ae; font-size: 16px; font-weight: 600; }
 
 .date-section { height: 742px; padding-top: 100px; }
 .date-section__info { display: grid; gap: 12px; margin-top: 44px; text-align: center; }
