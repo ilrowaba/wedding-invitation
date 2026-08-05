@@ -258,7 +258,7 @@ details ul { margin: 0; padding: 0; list-style: none; }
 .account-row__info p { display: flex; gap: 10px; margin: 0; font: 16px/24px 'Pretendard',sans-serif; }
 .account-row__info p.account-row__person { font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif; font-weight: 400; }
 .account-row__info p.account-row__number { color: #8d949f; font-family: 'Pretendard', sans-serif; font-weight: 300; }
-.copy-button { width: 60px; height: 36px; padding: 0; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 12px/18px 'Pretendard',sans-serif; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
+.copy-button { width: 60px; height: 36px; padding: 0; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 14px/20px 'Pretendard',sans-serif; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
 .copy-button:hover { border-color: #c4cad3; background: #f7f7f7; }
 .copy-button:active { transform: scale(.97); }
 .copy-button:focus-visible { outline: 2px solid #667286; outline-offset: 2px; }
