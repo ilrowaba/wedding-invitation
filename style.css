@@ -262,6 +262,10 @@ details ul { margin: 0; padding: 0; list-style: none; }
 .copy-button:hover { border-color: #c4cad3; background: #f7f7f7; }
 .copy-button:active { transform: scale(.97); }
 .copy-button:focus-visible { outline: 2px solid #667286; outline-offset: 2px; }
+.invitation-copy { width: 100%; height: 44px; margin-top: 32px; padding: 0; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 14px/20px 'Pretendard', sans-serif; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
+.invitation-copy:hover { border-color: #c4cad3; background: #f7f7f7; }
+.invitation-copy:active { transform: scale(.99); }
+.invitation-copy:focus-visible { outline: 2px solid #667286; outline-offset: 2px; }
 .footer { padding: 24px 20px 32px; background: #fff; color: #a8afb9; font: 10px/16px 'Pretendard', sans-serif; letter-spacing: .04em; text-align: center; }
 
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s ease; }

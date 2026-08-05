@@ -133,6 +133,7 @@ document.querySelector('#app').innerHTML = `
         <details><summary>신랑 측 <span class="summary-chevron" aria-hidden="true"></span></summary><ul>${accountRows(invitation.accounts.groom)}</ul></details>
         <details><summary>신부 측 <span class="summary-chevron" aria-hidden="true"></span></summary><ul>${accountRows(invitation.accounts.bride)}</ul></details>
       </div>
+      <button class="invitation-copy" id="invitationCopy" type="button">청첩장 주소 복사하기</button>
     </section>
     <footer class="footer">© 2026 Hyunil Kim. All rights reserved.</footer>
   </article>`;
@@ -270,10 +271,9 @@ document.querySelector('.lightbox__nav--prev').addEventListener('click', () => s
 document.querySelector('.lightbox__nav--next').addEventListener('click', () => showPhoto(currentPhoto + 1));
 lightbox.addEventListener('click', event => { if (event.target === lightbox) lightbox.close(); });
 
-document.querySelector('#shareButton')?.addEventListener('click', async () => {
-  const shareData = { title: '결혼식에 초대합니다', text: `${invitation.groom} ♥ ${invitation.bride}의 결혼식에 초대합니다.`, url: location.href };
-  if (navigator.share) { try { await navigator.share(shareData); } catch {} }
-  else { await navigator.clipboard.writeText(location.href); showToast('청첩장 주소를 복사했습니다.'); }
+document.querySelector('#invitationCopy').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(location.href); showToast('청첩장 주소를 복사했습니다'); }
+  catch { showToast('복사하지 못했습니다'); }
 });
 
 function updateCountdown() {
