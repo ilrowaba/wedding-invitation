@@ -86,7 +86,7 @@ document.querySelector('#app').innerHTML = `
     <section class="fig-section date-section reveal">
       <p class="fig-title">The Wedding Day</p>
       <div class="date-section__info"><strong>2026년 12월 19일 토요일 | 오후 4시 20분</strong><span>${invitation.venue}</span></div>
-      <button class="calendar-add" id="calendarAdd" type="button">일정 등록</button>
+      <a class="calendar-add" href="${asset('wedding.ics')}">일정 등록</a>
       <div class="calendar" aria-label="2026년 12월 달력">
         <div class="calendar__week"><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span></div>
         <div class="calendar__days">
@@ -222,35 +222,6 @@ musicControl.addEventListener('click', async () => {
     backgroundMusic.pause();
     setMusicState(false);
   }
-});
-
-document.querySelector('#calendarAdd').addEventListener('click', () => {
-  const calendarData = [
-    'BEGIN:VCALENDAR',
-    'VERSION:2.0',
-    'PRODID:-//Wedding Invitation//KO',
-    'CALSCALE:GREGORIAN',
-    'METHOD:PUBLISH',
-    'BEGIN:VEVENT',
-    'UID:20261219T162000-doyoung-hyunil-wedding',
-    'DTSTAMP:20260805T000000Z',
-    'DTSTART;TZID=Asia/Seoul:20261219T162000',
-    'DTEND;TZID=Asia/Seoul:20261219T182000',
-    `SUMMARY:${invitation.groom} ♥ ${invitation.bride} 결혼식`,
-    `LOCATION:${invitation.venue}\\, ${invitation.address}`,
-    'DESCRIPTION:두 사람의 결혼식에 초대합니다',
-    'END:VEVENT',
-    'END:VCALENDAR'
-  ].join('\r\n');
-  const file = new Blob([calendarData], { type: 'text/calendar;charset=utf-8' });
-  const url = URL.createObjectURL(file);
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = '김도영-김현일-결혼식.ics';
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
 
 const lightbox = document.querySelector('#lightbox');
