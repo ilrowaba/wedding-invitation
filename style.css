@@ -180,8 +180,8 @@ img { display: block; width: 100%; }
 .address-copy::before, .address-copy::after { content: ''; position: absolute; width: 6px; height: 8px; border: 1px solid currentColor; border-radius: 1px; }
 .address-copy::before { top: 2px; left: 3px; }
 .address-copy::after { top: 5px; left: 6px; background: #fff; }
-.map-links { display: grid; grid-template-columns: repeat(3, 98px); justify-content: center; gap: 8px; height: 36px; }
-.map-links a { display: flex; align-items: center; justify-content: center; gap: 4px; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 12px/18px 'Pretendard',sans-serif; text-decoration: none; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
+.map-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 8px; height: 36px; }
+.map-links a { display: flex; align-items: center; justify-content: center; gap: 4px; width: 100%; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 14px/20px 'Pretendard',sans-serif; text-decoration: none; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
 .map-links a:nth-child(2) { gap: 8px; }
 .map-links a:hover { border-color: #c4cad3; background: #f7f7f7; }
 .map-links a:active { transform: scale(.97); }
