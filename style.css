@@ -153,7 +153,7 @@ img { display: block; width: 100%; }
   line-height: 26px;
   font-weight: 400;
 }
-.calendar-add { display: block; width: 112px; height: 36px; margin: 20px auto 0; padding: 0; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 12px/18px 'Pretendard', sans-serif; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
+.calendar-add { display: block; width: 112px; height: 36px; margin: 20px auto 0; padding: 0; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 14px/20px 'Pretendard', sans-serif; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
 .calendar-add:hover { border-color: #c4cad3; background: #f7f7f7; }
 .calendar-add:active { transform: scale(.97); }
 .calendar-add:focus-visible { outline: 2px solid #667286; outline-offset: 2px; }

@@ -86,7 +86,7 @@ document.querySelector('#app').innerHTML = `
     <section class="fig-section date-section reveal">
       <p class="fig-title">The Wedding Day</p>
       <div class="date-section__info"><strong>2026년 12월 19일 토요일 | 오후 4시 20분</strong><span>${invitation.venue}</span></div>
-      <button class="calendar-add" id="calendarAdd" type="button">일정 등록하기</button>
+      <button class="calendar-add" id="calendarAdd" type="button">일정 등록</button>
       <div class="calendar" aria-label="2026년 12월 달력">
         <div class="calendar__week"><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span></div>
         <div class="calendar__days">
