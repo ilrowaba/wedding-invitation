@@ -272,7 +272,7 @@ details ul { margin: 0; padding: 0; list-style: none; }
 .reveal.is-visible { opacity: 1; transform: none; }
 .hero__content.reveal { transform: translateY(10px); }
 .hero__content.reveal.is-visible { transform: none; }
-.toast { position: fixed; z-index: 20; left: 50%; bottom: 28px; transform: translate(-50%, 15px); padding: 11px 17px; border-radius: 22px; background: rgba(31,34,29,.9); color: #fff; font-size: 16px; line-height: 24px; opacity: 0; pointer-events: none; transition: .25s ease; }
+.toast { position: fixed; z-index: 20; left: 50%; bottom: 28px; transform: translate(-50%, 15px); padding: 11px 17px; border-radius: 22px; background: rgba(31,34,29,.9); color: #fff; font-size: 16px; line-height: 24px; white-space: nowrap; opacity: 0; pointer-events: none; transition: .25s ease; }
 .toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
 
 .lightbox { width: 100%; max-width: 620px; height: 100%; max-height: none; margin: 0 auto; padding: 0; border: 0; background: rgba(10,12,10,.96); color: #fff; }
