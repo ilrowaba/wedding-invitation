@@ -41,6 +41,14 @@ const invitation = {
 const photos = Array.from({ length: 18 }, (_, index) => asset(`assets/photos/gallery-${String(index + 1).padStart(2, '0')}.jpg`));
 
 const calendarDays = Array.from({ length: 31 }, (_, index) => index + 1);
+const googleCalendarLink = `https://calendar.google.com/calendar/render?${new URLSearchParams({
+  action: 'TEMPLATE',
+  text: `${invitation.groom} ♥ ${invitation.bride} 결혼식`,
+  dates: '20261219T072000Z/20261219T092000Z',
+  details: '두 사람의 결혼식에 초대합니다',
+  location: `${invitation.venue}, ${invitation.address}`,
+  ctz: 'Asia/Seoul'
+})}`;
 
 const formatAccountNumber = (number) => {
   if (number.includes('-')) return number;
@@ -85,8 +93,8 @@ document.querySelector('#app').innerHTML = `
 
     <section class="fig-section date-section reveal">
       <p class="fig-title">The Wedding Day</p>
-      <div class="date-section__info"><strong>2026년 12월 19일 토요일 | 오후 4시 20분</strong></div>
-      <a class="calendar-add" href="${asset('wedding.ics')}">일정 등록</a>
+      <div class="date-section__info"><strong>2026년 12월 19일 토요일<br />오후 4시 20분</strong></div>
+      <a class="calendar-add" href="${googleCalendarLink}" target="_blank" rel="noreferrer">일정 등록</a>
       <div class="calendar" aria-label="2026년 12월 달력">
         <div class="calendar__week"><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span></div>
         <div class="calendar__days">
