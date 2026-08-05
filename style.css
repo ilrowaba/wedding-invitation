@@ -193,7 +193,7 @@ img { display: block; width: 100%; }
 .map-label strong { font-size: 12px; font-weight: 600; }
 .map-label span { color: #8d949f; font-size: 10px; }
 .transport { margin: 44px 20px 0; text-align: left; }
-.transport h3 { margin: 0 0 10px; color: #323441; font-size: 16px; line-height: 24px; font-weight: 600; }
+.transport h3 { margin: 0 0 10px; color: #323441; font-size: 18px; line-height: 26px; font-weight: 600; }
 .transport h3 {
   font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif;
   font-weight: 400;
