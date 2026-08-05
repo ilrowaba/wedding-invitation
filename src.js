@@ -116,7 +116,7 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section class="fig-section gallery-section reveal">
-      <p class="fig-title">Gallay</p>
+      <p class="fig-title">Gallery</p>
       <div class="gallery-main">
         <img src="${photos[0]}" alt="웨딩 갤러리 사진 1" draggable="false" />
         <button type="button" class="gallery-main__nav gallery-main__nav--prev" aria-label="이전 사진"><i aria-hidden="true"></i></button>
