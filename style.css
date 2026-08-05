@@ -172,8 +172,8 @@ img { display: block; width: 100%; }
 .location { height: 1071px; padding-top: 100px; }
 .location__card { margin-top: 44px; text-align: center; }
 .location__card { font-family: 'MaruBuri', 'Maru Buri', serif; }
-.location__card > strong { display: block; font-size: 16px; line-height: 24px; font-weight: 700; }
-.location__card > p { margin: 8px 0 36px; color: #8d949f; font-size: 14px; line-height: 29px; letter-spacing: -.04em; }
+.location__card > strong { display: block; font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif; font-size: 18px; line-height: 26px; font-weight: 400; }
+.location__card > p { margin: 8px 0 36px; color: #8d949f; font-size: 16px; line-height: 29px; letter-spacing: -.04em; }
 .location__card > p > span { display: flex; align-items: center; justify-content: center; }
 .address-line { display: inline-flex !important; align-items: center; }
 .address-copy { position: relative; flex: 0 0 16px; width: 16px; height: 16px; margin-left: 3px; padding: 0; border: 0; background: transparent; color: #8d949f; cursor: pointer; }
