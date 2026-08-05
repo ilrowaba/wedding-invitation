@@ -198,8 +198,8 @@ img { display: block; width: 100%; }
   font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif;
   font-weight: 400;
 }
-.transport p { margin: 0 0 32px; color: #858d98; font: 15px/23px 'Pretendard',sans-serif; }
-.transport p.transport__details--roomy { line-height: 27px; }
+.transport p { margin: 0 0 32px; color: #747c87; font: 16px/24px 'Pretendard',sans-serif; }
+.transport p.transport__details--roomy { line-height: 28px; }
 .subway-info span { display: inline-flex; align-items: center; gap: 7px; }
 .subway-badge {
   display: inline-grid;
