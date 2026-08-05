@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.DS_Store
+design.fig
+public/assets/audio/the_mountain-wedding-522480.mp3
