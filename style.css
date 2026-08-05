@@ -149,8 +149,8 @@ img { display: block; width: 100%; }
 .date-section__info strong, .date-section__info span { font-size: 16px; line-height: 24px; }
 .date-section__info strong {
   font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 400;
 }
 .calendar-add { display: block; width: 112px; height: 36px; margin: 20px auto 0; padding: 0; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 12px/18px 'Pretendard', sans-serif; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
