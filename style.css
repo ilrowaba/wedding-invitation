@@ -143,7 +143,7 @@ img { display: block; width: 100%; }
 .families strong { font-size: 18px; font-weight: 600; letter-spacing: .1em; }
 .families span { color: #9aa2ae; font-size: 16px; font-weight: 600; }
 
-.date-section { height: 742px; padding-top: 100px; }
+.date-section { height: 706px; padding-top: 100px; }
 .date-section__info { display: grid; gap: 12px; margin-top: 44px; text-align: center; }
 .date-section__info { font-family: 'MaruBuri', 'Maru Buri', serif; }
 .date-section__info strong, .date-section__info span { font-size: 16px; line-height: 24px; }
