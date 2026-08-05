@@ -143,14 +143,14 @@ img { display: block; width: 100%; }
 .families strong { font-size: 18px; font-weight: 600; letter-spacing: .1em; }
 .families span { color: #9aa2ae; font-size: 16px; font-weight: 600; }
 
-.date-section { height: 732px; padding-top: 100px; }
+.date-section { height: 744px; padding-top: 100px; }
 .date-section__info { display: grid; gap: 12px; margin-top: 44px; text-align: center; }
 .date-section__info { font-family: 'MaruBuri', 'Maru Buri', serif; }
 .date-section__info strong, .date-section__info span { font-size: 16px; line-height: 24px; }
 .date-section__info strong {
   font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 32px;
   font-weight: 400;
 }
 .calendar-add { display: flex; align-items: center; justify-content: center; width: 112px; height: 36px; margin: 20px auto 0; padding: 0; border: 1px solid #e2e5e9; border-radius: 4px; background: #fff; color: #323441; font: 14px/20px 'Pretendard', sans-serif; text-decoration: none; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, transform .12s ease; }
