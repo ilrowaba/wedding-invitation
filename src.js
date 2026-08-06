@@ -119,7 +119,7 @@ document.querySelector('#app').innerHTML = `
       <div class="transport">
         <h3>자차</h3><p class="transport__details transport__details--roomy">‘스타시티아트홀’ 검색<br />5층 주차 확인 데스크에서 주차권을 받아주세요<br />• 스타시티아트홀 B1~B5 | 2시간 무료<br />• 건국대학교병원 지상·지하 | 1시간 30분 무료</p>
         <h3>지하철</h3><p class="subway-info"><span><b class="subway-badge subway-badge--2" aria-label="2호선">2</b>건대입구역 2번 출구 | 도보 3분</span><br /><span><b class="subway-badge subway-badge--7" aria-label="7호선">7</b>건대입구역 3번 출구 | 도보 1분</span></p>
-        <h3>버스</h3><p class="transport__details transport__details--roomy">건대입구역, 건대입구역 사거리 하차<br />• 간선 240번, 721번, N61번, N62번<br />• 지선 2016번, 2222번, 3217번, 3220번, 4212번<br />• 직행 102번, 3500번 · 공항 6013번</p>
+        <h3>버스</h3><p class="transport__details transport__details--roomy">건대입구역, 건대입구역 사거리 하차<br />• 간선 240번, 721번, N61번, N62번<br />• 지선 2016번, 2222번, 3217번, 3220번, 4212번<br />• 직행 102번, 3500번<br />• 공항 6013번</p>
       </div>
     </section>
 
