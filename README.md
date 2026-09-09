@@ -20,7 +20,7 @@ npm run dev
 - `hero.jpg`: 첫 화면 세로 사진
 - `couple.jpg`: 초대글 아래 메인 사진
 - `detail.jpg`: Invitation 섹션 하단 사진
-- `gallery-01.jpg` ~ `gallery-20.jpg`: 갤러리 사진
+- `gallery-*.jpg`: 갤러리 사진 (`src.js`의 `galleryFiles`에 적힌 순서로 노출)
 
 가로·세로 비율이 달라도 `object-fit: cover`로 배치됩니다. 웹 성능을 위해 긴 변 기준 1,600~2,000px, JPEG 품질 80% 전후를 권장합니다.
 
