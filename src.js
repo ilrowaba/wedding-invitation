@@ -38,7 +38,7 @@ const invitation = {
   }
 };
 
-const photos = Array.from({ length: 18 }, (_, index) => asset(`assets/photos/gallery-${String(index + 1).padStart(2, '0')}.jpg`));
+const photos = Array.from({ length: 20 }, (_, index) => asset(`assets/photos/gallery-${String(index + 1).padStart(2, '0')}.jpg`));
 
 const calendarDays = Array.from({ length: 31 }, (_, index) => index + 1);
 const googleCalendarLink = `https://calendar.google.com/calendar/render?${new URLSearchParams({
