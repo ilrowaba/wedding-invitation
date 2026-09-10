@@ -29,7 +29,7 @@ const invitation = {
   accounts: {
     groom: [
       { label: '신랑', bank: '하나', number: '831-910196-73607', owner: '김도영' },
-      { label: '신랑 아버지', bank: '농협', number: '11111111111111', owner: '김남식' }
+      { label: '신랑 아버지', bank: 'SC제일은행', number: '400-20-237045', owner: '김남식' }
     ],
     bride: [
       { label: '신부', bank: '토스뱅크', number: '1000-0685-8415', owner: '김현일' },
