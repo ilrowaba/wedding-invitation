@@ -134,9 +134,11 @@ img { display: block; width: 100%; }
 .fig-title { margin: 0; color: #c4cad3; font-family: 'Zen Serif Local', serif; font-size: 14px; line-height: 14px; letter-spacing: .15em; text-align: center; text-transform: uppercase; }
 
 .greeting { height: 600px; }
-.greeting__image { position: absolute; inset: 244px 0 0; height: 356px; object-fit: cover; }
-.greeting__content { position: relative; z-index: 1; height: 522px; padding-top: 100px; text-align: center; }
-.greeting__copy { margin: 64px auto 0; color: #323441; font-size: 15px; line-height: 30px; letter-spacing: -.035em; }
+.greeting__image { position: absolute; inset: 296px 0 0; height: 356px; object-fit: cover; }
+.greeting__content { position: relative; z-index: 1; display: flex; height: 100%; flex-direction: column; justify-content: center; text-align: center; }
+.greeting__copy { margin: 32px auto 0; color: #323441; font-size: 15px; line-height: 30px; letter-spacing: -.035em; }
+.greeting__copy p { margin: 0; }
+.greeting__copy p + p { margin-top: 12px; }
 .families { display: grid; gap: 12px; margin-top: 64px; }
 .greeting__copy, .families { font-family: 'MaruBuri', 'Maru Buri', serif; }
 .families p { display: flex; align-items: baseline; justify-content: center; gap: 4px; margin: 0; }

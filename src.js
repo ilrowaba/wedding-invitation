@@ -12,10 +12,10 @@ const invitation = {
   address: '서울 광진구 능동로 110 스타시티영존 5층',
   telephone: '02-430-8000',
   message: [
-    '두 사람이 만나 미래를 함께하고자 합니다',
-    '두 사람을 진심으로 아끼고 돌봐주신 분들을 모시고',
-    '서약을 맺고자 하오니 가까이에서 축복해 주시면',
-    '감사하겠습니다'
+    ['한 해가 저물어가는 계절에', '우리는 새로운 시작을 맞이합니다'],
+    ['수많은 날을 지나', '서로의 곁이 가장 편안한 자리가 되었고'],
+    ['앞으로 오는 모든 계절도', '함께 맞이하고 싶어졌습니다'],
+    ['그 첫 번째 겨울을', '소중한 여러분의 축복 속에서', '시작하고 싶습니다']
   ],
   families: {
     groom: '김남식의 아들  도영',
@@ -103,7 +103,7 @@ document.querySelector('#app').innerHTML = `
       <img class="greeting__image" src="${asset('assets/photos/detail.jpg')}" alt="웨딩 소품" loading="lazy" />
       <div class="greeting__content">
       <p class="fig-title">Invitation</p>
-      <p class="greeting__copy">${invitation.message.join('<br />')}</p>
+      <div class="greeting__copy">${invitation.message.map((paragraph) => `<p>${paragraph.join('<br />')}</p>`).join('')}</div>
       <div class="families">
         <p><strong>김남식</strong><span>의 아들</span><strong>도영</strong></p>
         <p><strong>김래건</strong><span>의 딸</span><strong>현일</strong></p>
