@@ -133,7 +133,7 @@ document.querySelector('#app').innerHTML = `
     <section class="fig-section gallery-section reveal">
       <p class="fig-title">Gallery</p>
       <div class="gallery-main">
-        <img src="${photos[0]}" alt="웨딩 갤러리 사진 1" draggable="false" />
+        <img src="${photos[0]}" data-photo-file="${galleryFiles[0]}" alt="웨딩 갤러리 사진 1" draggable="false" />
         <button type="button" class="gallery-main__nav gallery-main__nav--prev" aria-label="이전 사진"><i aria-hidden="true"></i></button>
         <button type="button" class="gallery-main__nav gallery-main__nav--next" aria-label="다음 사진"><i aria-hidden="true"></i></button>
       </div>
@@ -266,6 +266,7 @@ let currentGalleryPhoto = 0;
 function selectGalleryPhoto(index, scrollThumbnail = true) {
   currentGalleryPhoto = (index + photos.length) % photos.length;
   galleryMainImage.classList.remove('is-portrait');
+  galleryMainImage.dataset.photoFile = galleryFiles[currentGalleryPhoto];
   galleryMainImage.src = photos[currentGalleryPhoto];
   if (galleryMainImage.complete) updateGalleryImageFit();
   galleryMainImage.alt = `웨딩 갤러리 사진 ${currentGalleryPhoto + 1}`;
