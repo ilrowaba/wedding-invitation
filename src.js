@@ -254,12 +254,20 @@ document.querySelectorAll('[data-photo]').forEach(button => button.addEventListe
 }));
 const galleryMain = document.querySelector('.gallery-main');
 const galleryMainImage = galleryMain.querySelector('img');
+function updateGalleryImageFit() {
+  galleryMainImage.classList.toggle('is-portrait', galleryMainImage.naturalHeight > galleryMainImage.naturalWidth);
+}
+galleryMainImage.addEventListener('load', updateGalleryImageFit);
+if (galleryMainImage.complete) updateGalleryImageFit();
+
 const galleryItems = [...document.querySelectorAll('[data-select-photo]')];
 let currentGalleryPhoto = 0;
 
 function selectGalleryPhoto(index, scrollThumbnail = true) {
   currentGalleryPhoto = (index + photos.length) % photos.length;
+  galleryMainImage.classList.remove('is-portrait');
   galleryMainImage.src = photos[currentGalleryPhoto];
+  if (galleryMainImage.complete) updateGalleryImageFit();
   galleryMainImage.alt = `웨딩 갤러리 사진 ${currentGalleryPhoto + 1}`;
   galleryItems.forEach((item, itemIndex) => item.classList.toggle('is-active', itemIndex === currentGalleryPhoto));
   if (scrollThumbnail) galleryItems[currentGalleryPhoto].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
