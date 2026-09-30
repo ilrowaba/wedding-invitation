@@ -243,7 +243,7 @@ img { display: block; width: 100%; }
 .gallery-strip::-webkit-scrollbar { display: none; }
 .gallery__item { flex: 0 0 calc((100% - 4px) / 4.5); width: calc((100% - 4px) / 4.5); height: auto; aspect-ratio: 1; padding: 0; border: 0; background: #000; cursor: pointer; overflow: hidden; scroll-snap-align: start; opacity: .55; transition: opacity .2s ease; }
 .gallery__item.is-active { opacity: 1; }
-.gallery__item img { height: 100%; object-fit: contain; }
+.gallery__item img { height: 100%; object-fit: cover; }
 
 .accounts { padding: 56px 20px; }
 .accounts h2 { margin: 0; color: #323441; font-family: 'MaruBuriSemiBold', 'MaruBuri', 'Maru Buri', serif; font-size: 18px; line-height: 26px; font-weight: 400; text-align: center; }
