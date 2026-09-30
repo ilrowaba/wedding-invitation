@@ -71,7 +71,7 @@ const accountRows = (rows) => rows.map((row) => `
 
 document.querySelector('#app').innerHTML = `
   <article class="invitation">
-    <audio id="backgroundMusic" src="${asset('assets/audio/krasnoshchok-wedding-romantic-love-music-409293.mp3')}" autoplay preload="metadata"></audio>
+    <audio id="backgroundMusic" src="${asset('assets/audio/wave%20to%20earth_bad.mp3')}" autoplay preload="metadata"></audio>
     <button class="music-control" id="musicControl" type="button" aria-label="배경음악 재생" aria-pressed="false"><span aria-hidden="true">♪</span></button>
     <section class="hero">
       <img class="hero__image" src="${asset('assets/photos/hero.jpg')}" alt="신랑 신부 웨딩 사진" />
