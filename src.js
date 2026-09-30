@@ -38,26 +38,13 @@ const invitation = {
   }
 };
 
-const galleryFiles = [
-  'gallery-01.jpg',
-  'gallery-02.jpg',
-  'gallery-03.jpg',
-  'gallery-04.jpg',
-  'gallery-06.jpg',
-  'gallery-08.jpg',
-  'gallery-09.jpg',
-  'gallery-10.jpg',
-  'gallery-11.jpg',
-  'gallery-12.jpg',
-  'gallery-13.jpg',
-  'gallery-14.jpg',
-  'gallery-15.jpg',
-  'gallery-16.jpg',
-  'gallery-17.jpg',
-  'gallery-18.jpg',
-  'gallery-19.jpg',
-  'gallery-20.jpg'
-];
+const galleryFiles = Object.keys(import.meta.glob(
+  '/public/assets/photos/gallery-*.*',
+  { eager: true, query: '?url', import: 'default' }
+))
+  .map((path) => path.split('/').pop())
+  .filter((file) => /^gallery-\d+\.(jpe?g|png|webp|avif)$/i.test(file))
+  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 const photos = galleryFiles.map((file) => asset(`assets/photos/${file}`));
 
 const calendarDays = Array.from({ length: 31 }, (_, index) => index + 1);
