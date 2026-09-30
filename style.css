@@ -240,9 +240,9 @@ img { display: block; width: 100%; }
 .gallery-main__nav i { width: 12px; height: 12px; border-bottom: 1.5px solid #fff; border-left: 1.5px solid #fff; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .4)); }
 .gallery-main__nav--prev i { transform: rotate(45deg); }
 .gallery-main__nav--next i { transform: rotate(225deg); }
-.gallery-strip { background: #000; display: flex; gap: 1px; height: auto; margin-top: 22px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; }
+.gallery-strip { background: #000; display: flex; gap: 0; height: auto; margin-top: 22px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; }
 .gallery-strip::-webkit-scrollbar { display: none; }
-.gallery__item { flex: 0 0 calc((100% - 4px) / 4.5); width: calc((100% - 4px) / 4.5); height: auto; aspect-ratio: 1; padding: 0; border: 0; background: #000; cursor: pointer; overflow: hidden; scroll-snap-align: start; opacity: .55; transition: opacity .2s ease; }
+.gallery__item { flex: 0 0 calc(100% / 4.5); width: calc(100% / 4.5); height: auto; aspect-ratio: 1; padding: 0; border: 0; background: #000; cursor: pointer; overflow: hidden; scroll-snap-align: start; opacity: .55; transition: opacity .2s ease; }
 .gallery__item.is-active { opacity: 1; }
 .gallery__item img { height: 100%; object-fit: cover; }
 
