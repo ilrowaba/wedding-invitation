@@ -44,6 +44,7 @@ const galleryFiles = Object.keys(import.meta.glob(
 ))
   .map((path) => path.split('/').pop())
   .filter((file) => /^gallery-\d+\.(jpe?g|png|webp|avif)$/i.test(file))
+  .filter((file) => file !== 'gallery-07.jpg')
   .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 const photos = galleryFiles.map((file) => asset(`assets/photos/${file}?v=${__GALLERY_VERSIONS__[file]}`));
 
